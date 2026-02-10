@@ -1,9 +1,10 @@
 using UnityEngine;
-
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public TMP_Text opponentFoldText;
     private void Awake()
     {
         Instance = this;
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateOpponentFoldCount(int count)
     {
-        Debug.Log("Opponent folded cards count: " + count);
+        opponentFoldText.text = "Opponent Folded: " + count;
     }
+
 }
