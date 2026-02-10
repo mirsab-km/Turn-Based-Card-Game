@@ -13,4 +13,9 @@ public class RevealManager : MonoBehaviour
     {
         Debug.Log("Reveal card received. CardId: " + msg.cardId);
     }
+    public void StartRevealPhase()
+    {
+        Debug.Log("Reveal Phase Started");
+    }
+
 }
