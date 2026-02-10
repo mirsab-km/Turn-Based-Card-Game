@@ -22,6 +22,7 @@ public class TurnManager : MonoBehaviour
 
         Debug.Log("I ended my turn");
 
+        CardSelectionManager.Instance.FoldSelectedCards();
         // Send JSON to opponent
         EndTurnMessage msg = new EndTurnMessage();
         msg.action = "endTurn";
